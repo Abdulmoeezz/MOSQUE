@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/ItemLayoutPostalCodes"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:id="@+id/postalcode_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotoregular"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/_14sdp"
+        android:text="PostCode : "/>
+
+    <TextView
+        android:id="@+id/postalcode_Number"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toEndOf="@id/postalcode_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14sdp"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/robotoregular"
+        android:text="2222-232323"/>
+
+    <View
+        android:layout_below="@id/postalcode_Number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/colorPrimary"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

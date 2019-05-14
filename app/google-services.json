@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "997794245690",
+    "firebase_url": "https://mymosque-81a73.firebaseio.com",
+    "project_id": "mymosque-81a73",
+    "storage_bucket": "mymosque-81a73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997794245690:android:85e39eedd3e49091",
+        "android_client_info": {
+          "package_name": "com.example.mymosque"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997794245690-dafc7s7r8oemkrr8aqeo0do61dro4ndu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsho0NNDMifhayb36qgERiUk0oEqPKxKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997794245690-dafc7s7r8oemkrr8aqeo0do61dro4ndu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

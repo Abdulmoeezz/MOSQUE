@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/fragmentmymosque"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    >
+
+    <RelativeLayout
+        android:id="@+id/MyPrimaryMosque"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+        android:id="@+id/MasjidCard_"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_149sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        app:cardElevation="@dimen/_12sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/HeadingTxt1"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="wrap_content"
+                android:text="Masjid-e-Rehman"
+                android:fontFamily="@font/segoeuiregular"
+                android:textStyle="bold"
+                android:textSize="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:textColor="#0396AB"/>
+
+
+
+            <TextView
+                android:id="@+id/addressTxt2"
+                android:layout_below="@id/HeadingTxt1"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="wrap_content"
+                android:text="231, Liverpool UK"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginLeft="@dimen/_9sdp"/>
+
+
+            <TextView
+                android:id="@+id/Txt_Miles"
+                android:layout_below="@id/addressTxt2"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:text="23212wqwqw"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_9sdp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="miles away"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_below="@id/addressTxt2"
+                android:layout_alignBaseline="@id/Txt_Miles"
+                android:layout_toEndOf="@id/Txt_Miles"
+                android:fontFamily="@font/segoeuiregular"
+                android:textColor="#7F8282"
+                android:textSize="@dimen/_10sdp"/>
+
+
+
+
+           <!-- <TextView
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_below="@id/Txt_Miles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21213123123"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/colorPrimary"/>-->
+
+
+            <ImageView
+                android:id="@+id/img_"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/_109sdp"
+                android:layout_height="@dimen/_107sdp"
+                android:layout_margin="@dimen/_9sdp"
+               />
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+        <Button
+        android:id="@+id/MosqueBTN"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_below="@id/MasjidCard_"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_59sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:text="Prayer Times"
+        android:textStyle="bold"
+        android:paddingStart="@dimen/_20sdp"
+        android:drawableRight="@drawable/time"
+        android:paddingEnd="@dimen/_18sdp"
+        android:textSize="@dimen/_18sdp"
+        android:fontFamily="@font/segoeuiregular"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="#0396AB"/>
+        <Button
+        android:id="@+id/VIewonMapBTN"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@id/MosqueBTN"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_59sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:text="View on Map"
+        android:paddingEnd="@dimen/_18sdp"
+        android:drawableRight="@drawable/ic_place"
+        android:textStyle="bold"
+        android:paddingStart="@dimen/_20sdp"
+        android:fontFamily="@font/segoeuiregular"
+        android:textSize="@dimen/_18sdp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="#0396AB"/>
+        <Button
+        android:id="@+id/PrayerTimesBTN"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@id/VIewonMapBTN"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_59sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:text="Ask Imam"
+        android:textStyle="bold"
+        android:fontFamily="@font/segoeuiregular"
+        android:textSize="@dimen/_18sdp"
+        android:textAllCaps="false"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_80sdp"
+        android:drawableRight="@drawable/time"
+        android:paddingEnd="@dimen/_18sdp"
+        android:textColor="@color/white"
+        android:background="#0396AB"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
+    <ImageView
+        android:id="@+id/Advertise_Image"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:scaleType="fitXY"
+        android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/HideLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/MosqueImage"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_mosque"
+            />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MosqueImage"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/robotoregular"
+            android:textSize="@dimen/_12sdp"
+            android:text="Sorry You Don't Have any Primary Mosque"/>
+
+
+
+        <Button
+            android:id="@+id/gotoNextScreen"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_below="@id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_59sdp"
+            android:layout_marginLeft="@dimen/_11sdp"
+            android:layout_marginRight="@dimen/_11sdp"
+            android:text="Goto Masajid List"
+            android:paddingEnd="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:paddingStart="@dimen/_20sdp"
+            android:fontFamily="@font/segoeuiregular"
+            android:textSize="@dimen/_18sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="#0396AB"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

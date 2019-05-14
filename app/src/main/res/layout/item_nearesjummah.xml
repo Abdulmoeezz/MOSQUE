@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/_323sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginLeft="@dimen/_18sdp"
+        android:layout_marginRight="@dimen/_18sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/ItemView_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_"
+                android:layout_width="@dimen/_81sdp"
+                android:layout_height="@dimen/_79sdp"
+                android:layout_margin="@dimen/_6sdp" />
+
+
+            <TextView
+                android:id="@+id/txt_Masajid"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_toEndOf="@id/img_"
+                android:fontFamily="@font/segoeuiregular"
+                android:text="Masjid-e-Rehman"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_address_"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_Masajid"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_toEndOf="@id/img_"
+                android:fontFamily="@font/segoeuiregular"
+                android:text="231, Liverpool UK"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/TextDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="12121212121212121"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/FirstJummahHeading"
+                android:layout_below="@id/txt_address_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Jummah"
+                android:layout_toEndOf="@id/img_"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/FirstJummahTime"
+                android:layout_below="@id/FirstJummahHeading"
+                android:layout_toEndOf="@id/img_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-3-2019"/>
+
+
+            <TextView
+                android:id="@+id/SecondJummahHeading"
+                android:layout_below="@id/txt_address_"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second Jummah"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+
+
+            <TextView
+                android:id="@+id/SecondJummahTime"
+                android:layout_below="@id/SecondJummahHeading"
+               android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-3-2019"/>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

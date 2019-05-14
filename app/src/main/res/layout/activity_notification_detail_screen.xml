@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationDetailScreen">
+
+    <RelativeLayout
+        android:id="@+id/Toolbar_NotificationScreen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/Back_BTN"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_back_black_24dp"/>
+
+
+
+
+
+<TextView
+    android:id="@+id/TitleToolbar_"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:textSize="@dimen/_14sdp"
+    android:textColor="@color/white"
+    android:fontFamily="@font/segoeuiregular"
+    android:text="Notification Detials"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_below="@id/Toolbar_NotificationScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:id="@+id/Date_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="12-12-19"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/LayoutMedia"
+                android:layout_width="match_parent"
+                android:layout_below="@id/Date_Text"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/Image_Des"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <bg.devlabs.fullscreenvideoview.FullscreenVideoView
+                    android:id="@+id/fullscreenVideoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:play_drawable="@drawable/ic_play_button"
+                    app:pause_drawable="@drawable/ic_pause_button"
+                    app:ffwd_drawable="@drawable/ic_fast_forward"
+                    app:rew_drawable="@drawable/ic_rewind"
+                    app:enter_fullscreen_drawable="@drawable/ic_fullscreen"
+                    app:exit_fullscreen_drawable="@drawable/ic_exitfullscreen"/>
+
+                <SeekBar
+                    android:id="@+id/AudioView_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:padding="@dimen/_10sdp"/>
+<RelativeLayout
+    android:id="@+id/AudioLayout"
+    android:layout_below="@id/AudioView_"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+
+
+    <ImageView
+        android:id="@+id/Audio_Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/ic_stop_icon_"/>
+
+
+    <ImageView
+        android:id="@+id/Audio_Play"
+        android:layout_toEndOf="@id/Audio_Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/ic_play_btn_audio"/>
+
+
+    <ImageView
+        android:id="@+id/Audio_Pause"
+        android:layout_toEndOf="@id/Audio_Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_pause_btn_audio"/>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TextView
+    android:id="@+id/DescriptionHeading"
+    android:layout_below="@+id/LayoutMedia"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Descriptions:"
+    android:fontFamily="@font/robotoregular"
+    android:textSize="@dimen/_18sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_10sdp"/>
+
+
+
+
+<TextView
+    android:id="@+id/Text_Description_D"
+    android:layout_below="@id/DescriptionHeading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="asdasdasdasdasdasdasdasdsa"
+    android:textSize="@dimen/_12sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_40sdp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

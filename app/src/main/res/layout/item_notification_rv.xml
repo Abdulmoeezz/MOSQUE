@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+
+<RelativeLayout
+    android:id="@+id/layoutNotification"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/notification_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_5sdp"
+
+        android:src="@drawable/ic_notificationsvg"
+        android:layout_marginStart="@dimen/_12sdp"
+        app:civ_border_width="@dimen/_2sdp"
+        app:civ_border_color="@color/colorPrimary"/>
+
+<TextView
+    android:id="@+id/Text_Description"
+    android:layout_toEndOf="@id/notification_image"
+    android:layout_width="match_parent"
+    android:layout_centerVertical="true"
+    android:textColor="@color/black"
+    android:fontFamily="@font/segoeuiregular"
+    android:textSize="@dimen/_10sdp"
+    android:text="asasdsdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdsadsadasdsad"
+    android:layout_height="@dimen/_40sdp"/>
+
+
+    <TextView
+        android:id="@+id/Time_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2:00AM"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/_8sdp"
+        android:fontFamily="@font/robotoregular"
+        android:layout_marginEnd="@dimen/_10sdp"/>
+
+
+<View
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_1sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
+</RelativeLayout>
